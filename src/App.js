@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom"
+
+import { Main } from "./pages/Main"
+import { FullInfoActivity } from "./components/FullInfoActivity"
+import { Favorites } from "./pages/Favorites"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <div className="col-lg-9 mx-auto">
+        <div className="d-flex justify-content-between">
+          <NavLink to="/">
+            <h2>Главная</h2>
+          </NavLink>
+          <NavLink to="/favorites">
+            <h2>Избранное</h2>
+          </NavLink>
+        </div>
+
+        <Switch>
+          <Route path="/" exact component={Main} /> />
+          <Route
+            path="/activity/:id"
+            render={({ match }) => {
+              const { id } = match.params
+              return <FullInfoActivity itemId={Number(id)} />
+            }}
+          />
+          <Route path="/favorites" exact component={Favorites} />
+        </Switch>
+      </div>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
