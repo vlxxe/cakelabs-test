@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cakelabs-test/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/cakelabs-test/static/js/main.38883445.chunk.js",
+    "main.js.map": "/cakelabs-test/static/js/main.38883445.chunk.js.map",
+    "runtime-main.js": "/cakelabs-test/static/js/runtime-main.636ecbf8.js",
+    "runtime-main.js.map": "/cakelabs-test/static/js/runtime-main.636ecbf8.js.map",
+    "static/js/2.672bf75c.chunk.js": "/cakelabs-test/static/js/2.672bf75c.chunk.js",
+    "static/js/2.672bf75c.chunk.js.map": "/cakelabs-test/static/js/2.672bf75c.chunk.js.map",
+    "index.html": "/cakelabs-test/index.html",
+    "precache-manifest.7e0505f501ed37be1125bfd5e9840586.js": "/cakelabs-test/precache-manifest.7e0505f501ed37be1125bfd5e9840586.js",
+    "service-worker.js": "/cakelabs-test/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/cakelabs-test/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.672bf75c.chunk.js.LICENSE": "/cakelabs-test/static/js/2.672bf75c.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.636ecbf8.js",
+    "static/js/2.672bf75c.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.38883445.chunk.js"
+  ]
+}
